@@ -35,7 +35,7 @@ def get_diffusion_pipelines():
 
     pipe = fetch_pretrained_model(
         StableDiffusionXLPipeline,
-        "stabilityai/stable-diffusion-xl-base-1.0",
+        "https://huggingface.co/CuteBlueEyed/GeminiX/resolve/main/Gemini_ILMixV5.safetensors",
         **common_args,
     )
     vae = fetch_pretrained_model(
@@ -43,7 +43,7 @@ def get_diffusion_pipelines():
     )
     refiner = fetch_pretrained_model(
         StableDiffusionXLImg2ImgPipeline,
-        "stabilityai/stable-diffusion-xl-refiner-1.0",
+        "https://huggingface.co/CuteBlueEyed/GeminiX/resolve/main/Gemini_ILMixV5.safetensors",
         **common_args,
     )
 
